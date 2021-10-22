@@ -1,7 +1,7 @@
 name = "Planner"
 uuid = "b978ac42-d0bb-4511-a015-acc2bc30a5f4"
 authors = ["spbost <sorenpost@pm.me>"]
-version = "0.1.0"
+version = "0.1.1"
 
 [deps]
 DataFrames = "a93c6f00-e57d-5684-b7b6-d8193f3e46c0"
