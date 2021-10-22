@@ -1,4 +1,5 @@
 module Planner
+export startplanning, addtarget!
 
 using Graphs
 using DataFrames
