@@ -128,7 +128,8 @@ function runplan(plan::Plan)
 
     while sum(is_stale) > 0
         target = eval_order[is_stale] |> first
-        @info "Updating target: $target."
+        target_file = getproperty(target, plan, :filename)
+        @info "Updating target: $(target_file)."
         rundeps(target, plan)
         eval_order, is_stale = staletargets(plan)
     end
